@@ -1,7 +1,7 @@
 {
-  "name": "my-first-vue-project",
+  "name": "my-project",
   "version": "1.0.0",
-  "description": "this is my very first vue project",
+  "description": "this is my first project",
   "author": "tenghui",
   "private": true,
   "scripts": {
