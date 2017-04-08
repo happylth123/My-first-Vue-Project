@@ -3,6 +3,10 @@
     <h1>{{ msg }}</h1>
     <h2>Essential Links 2</h2>
     <ul>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+    <br>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
       <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
@@ -26,7 +30,12 @@ export default {
   name: 'hello world',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App 2th page'
+      msg: 'Welcome to Your Vue.js App 2th page',
+      todos: [
+      { text: '学习 JavaScript' },
+      { text: '学习 Vue' },
+      { text: '整个牛项目' }
+    ]
     }
   }
 }
